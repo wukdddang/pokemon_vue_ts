@@ -2,7 +2,7 @@ import pokemonApi from '../api/pokemonApi';
 import { Pokemon } from '../interfaces/pokemon';
 
 const getPokemonsId = () => {
-  const pokemonsArr = Array.from(Array(650));
+  const pokemonsArr = Array.from(Array(649));
   return pokemonsArr.map((_, idx) => idx + 1);
 }
 

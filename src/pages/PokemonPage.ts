@@ -34,7 +34,7 @@ export default defineComponent({
       pokemon.value = pokemonArr.value[randomInt]
     }
 
-    const checkAnswer = ( selectedId: number) => {
+    const checkAnswer = (selectedId: number) => {
       if (!pokemon.value) return;
 
       showPokemon.value = true
@@ -63,7 +63,6 @@ export default defineComponent({
       showPokemon,
       showAnswer,
       message,
-
       mixPokemonArray,
       checkAnswer,
       newGame,
