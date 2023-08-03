@@ -5,6 +5,8 @@ import PokemonPicture from '../components/PokemonPicture.vue'
 import getPokemonOptions from '../helpers/getPokemonOptions'
 import { Pokemon } from '../interfaces/pokemon'
 
+import { POKEMON_NUMS_TO_FETCH } from '../constants/constants'
+
 export default defineComponent({
   name: 'PokemonPage',
   components: {
@@ -30,7 +32,7 @@ export default defineComponent({
         return;
       }
       retryCount = 0;
-      const randomInt = Math.floor(Math.random() * 4)
+      const randomInt = Math.floor(Math.random() * POKEMON_NUMS_TO_FETCH)
       pokemon.value = pokemonArr.value[randomInt]
     }
 
